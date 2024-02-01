@@ -1,7 +1,9 @@
 #ShoppingList-App
 
 This was my first project using Django Framework a simple shopping list.
+
 I used Python for all functionalities, and the entire application was written in PyCharm.Also, during the realization of the project, I used the Djnago web framework to develop the project.
+
 The project has one app where I integrated the functionality of viewing the list of products, adding products, deleting them from the list, and changing the status of the product from bought to not bought. 
 
 Database
