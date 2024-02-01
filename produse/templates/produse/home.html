@@ -6,14 +6,14 @@
 <!--        }-->
 <!--</style>-->
 {% block content %}
-    <h2>Introduceti produsele aici</h2>
+    <h2>Insert the products here!</h2>
     <br>
     <table class="table">
         <thead>
             <tr>
-                <th>PRODUS</th>
+                <th>PRODUCT</th>
                 <th>STATUS</th>
-                <th>STERGE</th>
+                <th>DELETE</th>
             </tr>
         </thead>
         <tbody>
@@ -22,13 +22,13 @@
                     {% if product.cumparat %}
                         <tr class="table-success">
                             <td class="linethrough">{{ product.product }}</td>
-                            <td><a href="{% url 'change_status' product.id %}">Renunta</a></td>
+                            <td><a href="{% url 'change_status' product.id %}">Discard</a></td>
                             <td><a href="{% url 'delete' product.id %}">Delete</a></td>
                         </tr>
                     {% else %}
                         <tr class="table-secondary">
                             <td>{{ product.product }}</td>
-                            <td><a href="{% url 'change_status' product.id %}">Cumpara</a></td>
+                            <td><a href="{% url 'change_status' product.id %}">Buy</a></td>
                             <td><a href="{% url 'delete' product.id %}">Delete</a></td>
                         </tr>
                     {% endif %}
